@@ -138,7 +138,7 @@ def mel_filter(frame_pow, fs, n_filter, nfft):
     return filter_banks
 
 def main():
-    wav_file = r'mycode\自学语音相关知识\data\p979_015_mic.wav'
+    wav_file = r'E:\repository\auto_encoder_decoder_learning\自学语音相关知识\data\p979_015_mic.wav'
     fs, sig = wavfile.read(wav_file)# fs是wav文件的采样率，signal是wav文件的内容，filename是要读取的音频文件的路径
     sig = sig[0: int(10 * fs)] # 保留前10s数据
     while True:
